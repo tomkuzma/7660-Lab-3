@@ -16,8 +16,9 @@ module adcinterface (
 
     enum logic [1:0] {A, B, C, D} state, next_state;
     logic start;
-    logic [2:0] count, next_count;
-    logic SDI [5:0];
+    logic [3:0] count, next_count;
+    logic SDI [11:0];
+    logic [11:0] load;
 
 
     always_ff @( posedge clk, negedge reset_n ) begin
@@ -34,7 +35,7 @@ module adcinterface (
     always_comb begin   
         next_count = count - 1;
         // set SDI from chan
-        SDI = {1'b1, chan[0], chan[2], chan[1], 1'b1, 1'b0};
+        SDI = {1'b1, chan[0], chan[2], chan[1], 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
         next_state = state;
         // next state logic
         if (next_count == 0) begin
@@ -45,19 +46,21 @@ module adcinterface (
                                             next_state = B;
                 end
                 B : begin
-                if (start)                  next_state = C;
-                    else                    next_state = A;
+                    if (start)              next_state = C;
+                    else begin
+                                            next_state = A;
+                        result = load;
+                    end 
                 
-                ADC_CONVST = 1'b0;
-                end
+                    ADC_CONVST = 1'b0;
+                end 
                 C : begin
-                        start = 1'b0;
-                                            next_state = D;
+                    start = 1'b0;
+                                            next_state = B;
                     end
-                D :                         next_state = B;
                 default: begin
                     start = 1'b0;
-                    next_state = A;
+                                            next_state = A;
                 end
             endcase
         
@@ -66,16 +69,19 @@ module adcinterface (
         if (next_state == A || next_state == B)
             next_count = 1;
         else 
-            next_count = 6;
+            next_count = 12;
         end
     end
 
     // update SDI on SCK neg
-    always_ff @(negedge ADC_SCK) begin
+    always_ff @(negedge clk) begin
+        if (next_state == C && next_count - 1 >= 0)
+            ADC_SDI <= SDI[next_count- 1];
+
         if (state == C)
-            ADC_SDI <= SDI[next_count];
+            load[count - 1] <= ADC_SDO;
+            
     end
 
-    assign ADC_SCK = (state == C || state == D) ? clk : 1'b0;
-    
+    assign ADC_SCK = (state == C) ? clk : 1'b0;
 endmodule
