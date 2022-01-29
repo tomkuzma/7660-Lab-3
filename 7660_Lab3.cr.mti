@@ -1,0 +1,37 @@
+{C:/Users/t_kuz/Documents/7660 Lab 3/kpdecode.sv} {1 {vlog -work work -sv -stats=none {C:/Users/t_kuz/Documents/7660 Lab 3/kpdecode.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module kpdecode
+
+Top level modules:
+	kpdecode
+
+} {} {}} {C:/Users/t_kuz/Documents/7660 Lab 3/decode7.sv} {1 {vlog -work work -sv -stats=none {C:/Users/t_kuz/Documents/7660 Lab 3/decode7.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module decode7
+
+Top level modules:
+	decode7
+
+} {} {}} {C:/Users/t_kuz/Documents/7660 Lab 3/colseq.sv} {1 {vlog -work work -sv -stats=none {C:/Users/t_kuz/Documents/7660 Lab 3/colseq.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module colseq
+
+Top level modules:
+	colseq
+
+} {} {}} {C:/Users/t_kuz/Documents/7660 Lab 3/lab3.sv} {1 {vlog -work work -sv -stats=none {C:/Users/t_kuz/Documents/7660 Lab 3/lab3.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lab3
+-- Compiling module pll
+
+Top level modules:
+	lab3
+
+} {} {}} {C:/Users/t_kuz/Documents/7660 Lab 3/adcinterface_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/t_kuz/Documents/7660 Lab 3/adcinterface_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module adcinterface_tb
+
+Top level modules:
+	adcinterface_tb
+
+} {} {}}
