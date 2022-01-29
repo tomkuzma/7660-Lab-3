@@ -2,6 +2,7 @@
 // FSM for communicating with 
 // author: Tom Kuzma
 // Date: Jan 27, 2022
+// test
 
 module adcinterface (
     input logic clk, reset_n,   // clock and reset
