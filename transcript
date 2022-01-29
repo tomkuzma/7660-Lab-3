@@ -1,0 +1,81 @@
+# Compile of adcinterface.sv failed with 9 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 9 errors.
+# Compile of adcinterface.sv failed with 8 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 8 errors.
+# Compile of adcinterface.sv failed with 5 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 5 errors.
+# Compile of adcinterface.sv failed with 21 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 21 errors.
+# Compile of adcinterface.sv failed with 5 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 5 errors.
+# Compile of adcinterface.sv failed with 4 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of adcinterface.sv failed with 4 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of adcinterface.sv failed with 1 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of adcinterface.sv failed with 6 errors.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 1 failed with 6 errors.
+# Compile of adcinterface.sv was successful.
+# Compile of adcinterface_tb.sv was successful.
+# Compile of colseq.sv was successful.
+# Compile of decode7.sv was successful.
+# Compile of kpdecode.sv was successful.
+# Compile of lab3.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.adcinterface_tb
+# vsim -gui work.adcinterface_tb 
+# Start time: 15:26:30 on Jan 28,2022
+# Loading sv_std.std
+# Loading work.adcinterface_tb
+# Loading work.adcinterface
+add wave sim:/adcinterface_tb/*
+run -all
+quit -sim
+# End time: 15:27:35 on Jan 28,2022, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 14

@@ -1,0 +1,186 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Quartus_CycloneV
+vadcinterface
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1643406785
+!i10b 1
+!s100 LSXiX2E8^l3h@`oW^:0>=0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IdH[m3`dQS;gPagK>9B?J11
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/t_kuz/Documents/7660 Lab 3
+w1643406776
+8C:/Users/t_kuz/Documents/7660 Lab 3/adcinterface.sv
+FC:/Users/t_kuz/Documents/7660 Lab 3/adcinterface.sv
+!i122 45
+L0 6 72
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1643406785.000000
+!s107 C:/Users/t_kuz/Documents/7660 Lab 3/adcinterface.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/t_kuz/Documents/7660 Lab 3/adcinterface.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vadcinterface_tb
+R0
+R1
+!i10b 1
+!s100 3lF5Z?1JI2@zjn<4T3[G>3
+R2
+IDC_XjlF?ZJ=hoSH_1cmd^3
+R3
+S1
+R4
+w1643180394
+8C:/Users/t_kuz/Documents/7660 Lab 3/adcinterface_tb.sv
+FC:/Users/t_kuz/Documents/7660 Lab 3/adcinterface_tb.sv
+!i122 46
+L0 6 67
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/t_kuz/Documents/7660 Lab 3/adcinterface_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/t_kuz/Documents/7660 Lab 3/adcinterface_tb.sv|
+!i113 1
+R7
+R8
+vcolseq
+R0
+R1
+!i10b 1
+!s100 UYBoF[?Ce70Q1_z7_z_D[2
+R2
+IiIh0gf]<N3ik]D5l_UV:z0
+R3
+S1
+R4
+w1642786308
+8C:/Users/t_kuz/Documents/7660 Lab 3/colseq.sv
+FC:/Users/t_kuz/Documents/7660 Lab 3/colseq.sv
+!i122 47
+L0 6 37
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/t_kuz/Documents/7660 Lab 3/colseq.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/t_kuz/Documents/7660 Lab 3/colseq.sv|
+!i113 1
+R7
+R8
+vdecode7
+R0
+R1
+!i10b 1
+!s100 oPNJEg9?`BCzaOK19KVhm1
+R2
+I`>f:SK9<b[d7^KDEH1[Yo1
+R3
+S1
+R4
+w1642787904
+8C:/Users/t_kuz/Documents/7660 Lab 3/decode7.sv
+FC:/Users/t_kuz/Documents/7660 Lab 3/decode7.sv
+!i122 48
+L0 5 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/t_kuz/Documents/7660 Lab 3/decode7.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/t_kuz/Documents/7660 Lab 3/decode7.sv|
+!i113 1
+R7
+R8
+vkpdecode
+R0
+Z9 !s110 1643406786
+!i10b 1
+!s100 1koIgnFzc`B[l<V^`AEL[1
+R2
+I_1Y9_33Z;`7l?c?J?QhL51
+R3
+S1
+R4
+w1643001982
+8C:/Users/t_kuz/Documents/7660 Lab 3/kpdecode.sv
+FC:/Users/t_kuz/Documents/7660 Lab 3/kpdecode.sv
+!i122 49
+L0 6 52
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/t_kuz/Documents/7660 Lab 3/kpdecode.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/t_kuz/Documents/7660 Lab 3/kpdecode.sv|
+!i113 1
+R7
+R8
+vlab3
+R0
+R9
+!i10b 1
+!s100 0Nd3A]Bl7Ze7j;:b7jP6A0
+R2
+IHD?][kT8W8P:3@naRzSU<3
+R3
+S1
+R4
+Z10 w1643180396
+Z11 8C:/Users/t_kuz/Documents/7660 Lab 3/lab3.sv
+Z12 FC:/Users/t_kuz/Documents/7660 Lab 3/lab3.sv
+!i122 50
+L0 5 62
+R5
+r1
+!s85 0
+31
+Z13 !s108 1643406786.000000
+!s107 C:/Users/t_kuz/Documents/7660 Lab 3/lab3.sv|
+Z14 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/t_kuz/Documents/7660 Lab 3/lab3.sv|
+!i113 1
+R7
+R8
+vpll
+R0
+R9
+!i10b 1
+!s100 iJKN@zAW^[[[PGc_jeN^m3
+R2
+I5cC=>8OC>>zedOI[URXi^0
+R3
+S1
+R4
+R10
+R11
+R12
+!i122 50
+L0 75 84
+R5
+r1
+!s85 0
+31
+R13
+Z15 !s107 C:/Users/t_kuz/Documents/7660 Lab 3/lab3.sv|
+R14
+!i113 1
+R7
+R8
