@@ -23,9 +23,11 @@ module adcinterface (
     always_ff @( posedge clk, negedge reset_n ) begin
         if (~reset_n) begin
             state <= A;
+            count = 1;
         end
         else begin
             state <= next_state;
+            count <= next_count;
         end
     end
 
@@ -33,9 +35,9 @@ module adcinterface (
         next_count = count - 1;
         // set SDI from chan
         SDI = {1'b1, chan[0], chan[2], chan[1], 1'b1, 1'b0};
-
+        next_state = state;
         // next state logic
-        if (next_count == 0)
+        if (next_count == 0) begin
             case (state)
                 A : begin
                     ADC_CONVST = 1'b1;
@@ -65,14 +67,15 @@ module adcinterface (
             next_count = 1;
         else 
             next_count = 6;
+        end
     end
 
     // update SDI on SCK neg
-    always_ff @(posedge ADC_SCK) begin
+    always_ff @(negedge ADC_SCK) begin
         if (state == C)
             ADC_SDI <= SDI[next_count];
     end
 
-    assign ADC_SCK = (state == C || state == D) ? ~clk : 1'b0;
+    assign ADC_SCK = (state == C || state == D) ? clk : 1'b0;
     
 endmodule
