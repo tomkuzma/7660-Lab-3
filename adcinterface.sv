@@ -31,7 +31,7 @@ module adcinterface (
             count <= next_count;
         end
     end
-
+// test
     always_comb begin   
         next_count = count - 1;
         // set SDI from chan
