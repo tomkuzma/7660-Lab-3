@@ -1,0 +1,14 @@
+
+State Machine - |lab3|adcinterface:comb_11|state
+Name state.A state.C state.B state.D 
+state.D 0 0 0 0 
+state.B 0 0 1 1 
+state.C 0 1 0 1 
+state.A 1 0 0 1 
+
+State Machine - |lab3|colseq:colseq_0|current
+Name current.A current.B current.C current.D 
+current.A 0 0 0 0 
+current.B 1 1 0 0 
+current.C 1 0 1 0 
+current.D 1 0 0 1 
